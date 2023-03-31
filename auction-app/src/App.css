@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +39,181 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+.container {
+  display: flex;
+  max-height: 100%;
+  background: linear-gradient(
+    116.8deg,
+    rgba(105, 64, 243, 0.81) 2.02%,
+    #c23859 98.96%
+  );
+}
+.leftComponents {
+  background-color: #fff;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* position: relative; */
+}
+.bidchainLogo {
+  height: auto;
+  width: 400px;
+  border-radius: 20px;
+  margin-top: 78px;
+}
+
+@media only screen and (max-width: 950px) {
+  .bidchainLogo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .signupForm {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .signUp {
+    width: auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .signupForm input {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.leftComponents .signUp {
+  font-family: Outfit;
+  font-size: 44px;
+}
+
+.leftComponents .box {
+  width: 200px;
+  height: 25px;
+  /* background: #ededed; */
+  border-radius: 30px;
+  padding: 0 10px 0 10px;
+}
+
+.submitBtn {
+  font-family: Outfit;
+  font-size: 18px;
+  text-align: center;
+}
+
+.submitBtn button {
+  cursor: pointer;
+  font-family: Outfit;
+  /* font-size: 18px; */
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.rightComponents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightComponents .banner {
+  width: 70%;
+  height: 70%;
+}
+
+/* Below is 2nd page css */
+table,
+th,
+td {
+  /* border: 1px solid black; */
+  border-radius: 2px;
+}
+table {
+  padding: 5px;
+}
+thead {
+  background-color: #c4c4c4;
+}
+th {
+  padding: 10px 20px;
+
+  /* border:1px solid black; */
+}
+td {
+  text-align: center;
+}
+
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    116.8deg,
+    rgba(105, 64, 243, 0.81) 2.02%,
+    #c23859 98.96%
+  );
+  padding: 5px 20px 5px 95px;
+}
+.logo img {
+  cursor: pointer;
+  height: 50px;
+  width: 200px;
+  border-radius: 15px;
+}
+.profile .accountIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.main_add {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  padding: 50px 100px 20px 0;
+}
+.main_add .addIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.main_tabs {
+  display: flex;
+  justify-content: center;
+}
+.main_tabs button {
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  background: linear-gradient(0deg, #a8499b, #a8499b),
+    linear-gradient(0deg, #eeeeee, #eeeeee);
+  background: #eeeeee;
+  border: 1px solid #a8499b;
+  border-radius: 10px;
+  /* border-radius: 10px; */
+}
+.main_table {
+  display: flex;
+  justify-content: center;
 }
