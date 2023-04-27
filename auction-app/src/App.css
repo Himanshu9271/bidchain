@@ -1,45 +1,6 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+#root {
+  font-family: "Poppins", sans-serif;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
 
 .container {
   display: flex;
@@ -103,7 +64,6 @@
 }
 
 .leftComponents .signUp {
-  font-family: Outfit;
   font-size: 44px;
 }
 
@@ -115,19 +75,15 @@
   padding: 0 10px 0 10px;
 }
 
-.submitBtn {
-  font-family: Outfit;
-  font-size: 18px;
-  text-align: center;
-}
-
-.submitBtn button {
+.loginBtn {
+  background-color: orangered;
+  color: white;
+  margin: 2rem;
+  border: none;
+  height: 3rem;
+  padding: 1rem;
   cursor: pointer;
-  font-family: Outfit;
-  /* font-size: 18px; */
-  text-align: center;
   border-radius: 20px;
-  margin-bottom: 20px;
 }
 
 .rightComponents {
@@ -165,6 +121,7 @@ td {
 
 .main_nav {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(
@@ -172,24 +129,28 @@ td {
     rgba(105, 64, 243, 0.81) 2.02%,
     #c23859 98.96%
   );
-  padding: 5px 20px 5px 95px;
+  padding: 5px 0px 5px 0px;
 }
 .logo img {
+  margin-left: 1em;
   cursor: pointer;
-  height: 50px;
+  height: 60px;
   width: 200px;
   border-radius: 15px;
 }
-.profile .accountIcon {
+.profile {
+  margin-right: 1.5em;
   width: 40px;
   height: 40px;
   cursor: pointer;
 }
 .main_add {
-  cursor: pointer;
+  width: 80%;
   display: flex;
-  justify-content: flex-end;
-  padding: 50px 100px 20px 0;
+  flex-direction: row-reverse;
+  /* justify-content: flex-end; */
+  /* padding: 50px 100px 20px 0; */
+  margin: 1em;
 }
 .main_add .addIcon {
   width: 40px;
@@ -198,22 +159,37 @@ td {
 
 .main_tabs {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 .main_tabs button {
-  margin: 10px;
-  font-size: 20px;
+  /* border: none; */
   cursor: pointer;
   height: 30px;
   width: 100px;
-  background: linear-gradient(0deg, #a8499b, #a8499b),
-    linear-gradient(0deg, #eeeeee, #eeeeee);
+  margin: 1em;
   background: #eeeeee;
-  border: 1px solid #a8499b;
   border-radius: 10px;
-  /* border-radius: 10px; */
 }
-.main_table {
+.main_table_container {
+  width: 80%;
+  min-height: 50vh;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+.auction_entries {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.entries {
+  background-color: #ff7043;
+}
+
+.auction_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
